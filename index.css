@@ -24,7 +24,7 @@ body{
 
 .graph{
     width: 40%;
-    border-style:solid;
+    /* border-style:solid; */
     position:relative;
 }
 
@@ -37,7 +37,7 @@ body{
     bottom:30%;
 
 }
-
+/* setting the location and length of each bar */
 #one{
     left:10%;
 }
@@ -45,6 +45,93 @@ body{
 #two{
     left:30%;
     width:10%;
+}
+
+#three{
+    left: 38%;
+    width: 5%;
+}
+
+#four{
+    left: 45%;
+    width: 8%;
+}
+
+#five{
+    left:53%;
+    width: 10%;
+}
+
+#six{
+    left: 65%;
+    width: 10%;
+}
+
+#seven{
+    left: 70%;
+    width:10%;
+}
+
+
+/* setting the animation for each bar*/
+#seven:after{
+    background:rgba(242, 201, 76, 0.5);    
+    content: '';
+    position: absolute;
+    left:0;
+    width:0;
+    height: 100%;
+    border-radius: 50px;
+    animation: load 10s forwards;
+    animation-delay: 45s;
+}
+
+#six:after{
+    background: rgba(140, 190, 33, 0.5);    
+    content: '';
+    position: absolute;
+    left:0;
+    width:0;
+    height: 100%;
+    border-radius: 50px;
+    animation: load 10s forwards;
+    animation-delay: 40s;
+}
+
+#five:after{
+    background:rgba(242, 201, 76, 0.5);    
+    content: '';
+    position: absolute;
+    left:0;
+    width:0;
+    height: 100%;
+    border-radius: 50px;
+    animation: load 10s forwards;
+    animation-delay: 30s;
+}
+
+#four:after{
+    background:rgba(47, 128, 237, 0.45);    
+    content: '';
+    position: absolute;
+    left:0;
+    width:0;
+    height: 100%;
+    border-radius: 50px;
+    animation: load 10s forwards;
+    animation-delay: 20s;
+}
+
+#three:after{
+    background: rgba(242, 201, 76, 0.5);    
+    content: '';
+    position: absolute;
+    left:0;
+    width:0;
+    height: 100%;
+    border-radius: 50px;
+    animation: load 5s forwards;
+    animation-delay: 15s;
 }
 
 #two:after{
@@ -55,7 +142,7 @@ body{
     width:0;
     height: 100%;
     border-radius: 50px;
-    animation: load 20s forwards;
+    animation: load 5s forwards;
     animation-delay: 10s;
 
 }
@@ -80,7 +167,34 @@ body{
     visibility: hidden;
     position: absolute;
     bottom:25%;
-    left:15%;
+    left:18%;
+}
+
+#green{
+    background: rgba(140, 190, 33, 0.5);
+}
+
+#yellow{
+    background: rgba(242, 201, 76, 0.5);
+    left: 42%;
+    animation-delay:18s;    
+}
+
+#blue{
+    background: rgba(47, 128, 237, 0.45);
+    left: 49%;
+    animation-delay:26s;    
+
+}
+
+#interrupt{
+    width:3%;
+    position:absolute;
+    left:37.5%;
+    bottom:25%;
+    visibility:hidden;
+    animation: show 5s forwards;
+    animation-delay: 16s;
 }
 
 @keyframes show{
@@ -108,3 +222,4 @@ body{
         width: 100%;
       }
 }
+

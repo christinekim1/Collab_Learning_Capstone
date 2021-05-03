@@ -1,0 +1,26 @@
+p{
+
+
+
+    /* Capstone/Body Text_16 */
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+
+    /* Capstone/Text */
+
+    color: #232E40;
+
+}
+
+.caption_section{
+    position:absolute;
+    width: 100%;
+    padding: 20px;
+    left:5%;
+    top: 0%;
+    text-align:left;
+}
