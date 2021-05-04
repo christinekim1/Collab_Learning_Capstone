@@ -1,9 +1,5 @@
 p{
-
-
-
     /* Capstone/Body Text_16 */
-
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: normal;
@@ -16,11 +12,73 @@ p{
 
 }
 
+
 .caption_section{
     position:absolute;
-    width: 100%;
-    padding: 20px;
-    left:5%;
-    top: 0%;
-    text-align:left;
+    width: 80%;
+    padding: 5px;
+    left:7%;
+    top: 25%;
+}
+
+#cap-one{
+    visibility: hidden;
+    animation: show-hide 20s forwards;
+}
+
+#cap-two{
+    visibility:hidden;
+    animation: show-hide 10s forwards;
+    animation-delay: 10s;
+}
+
+#cap-three{
+    visibility:hidden;
+    animation: show-hide 5s forwards;
+    animation-delay: 15s;
+}
+
+#cap-four{
+    visibility:hidden;
+    animation: show-hide 8s forwards;
+    animation-delay: 20s;
+}
+
+#cap-five{
+    visibility:hidden;
+    animation: show-hide 8s forwards;
+    animation-delay: 20s;
+}
+
+#cap-six{
+    visibility:hidden;
+    animation: show-hide 7s forwards;
+    animation-delay: 21s;
+}
+
+#cap-seven{
+    visibility:hidden;
+    animation: show-hide 10s forwards;
+    animation-delay: 28s;
+}
+
+#cap-eight{
+    visibility:hidden;
+    animation: show-hide 10s forwards;
+    animation-delay: 28s;
+}
+
+#cap-nine{
+    visibility:hidden;
+    animation: show-hide 9s forwards;
+    animation-delay: 29s;
+}
+
+@keyframes show-hide{
+    50% {
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
 }
