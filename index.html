@@ -6,6 +6,7 @@
     <title>Home</title>
     <link href="index.css" rel="stylesheet" type="text/css">
     <link href="index_group2.css" rel="stylesheet" type="text/css">
+    <script src="index.js"></script>
 
     <link href="captions.css" rel="stylesheet" type="text/css">
     <body>
@@ -13,23 +14,32 @@
 
 <body>
     <div class = "wrapper">
-        <img class = "full-width-img" src = "assets/nav.png" />
+        <a href = "post-class.html">
+            <img class = "full-width-img" src = "assets/nav.png"/>
+        </a>
         <div class = "row1">
             <div class = "graph">
                 <!-- code for the bars -->
                 <div class = "bar" id = "one"></div>
-                <div class = "keyword" id = "green"></div>
+                <div class = "keyword" id = "green" onMouseOver="show('cc-one')" onMouseOut="hide('cc-one')"></div>
                 <img class = "half-width-img" src = "assets/graph_frame.png" />
                 <div class = "bar" id = "two"></div>
                 <img id = "interrupt" src = "assets/interruption.png"/>
                 <div class = "bar" id = "three"></div>
                 <div class = "bar" id = "four"></div>
-                <div class = "keyword" id = "blue"></div>
+                <div class = "keyword" id = "blue" onMouseOver="show('cc-two')" onMouseOut="hide('cc-two')"></div>
                 <div class = "bar" id = "five"></div>
                 <div class = "bar" id = "six"></div>
                 <div class = "bar" id = "seven"></div>
                 <img id = "interrupt" src = "assets/interruption.png" style = "left: 71%; animation-delay: 46s;"/>
 
+                <div class = "cc" id = "cc-one">
+                    <img src = "assets/cc/CC.png" style = "width: 50%;">
+                </div>
+
+                <div class = "cc" id = "cc-two">
+                    <img src = "assets/cc/CC2.png" style = "width: 50%;">
+                </div>
 
                 <!-- code for the live captions -->
                 <div class = "caption_section">

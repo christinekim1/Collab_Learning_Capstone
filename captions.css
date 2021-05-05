@@ -12,6 +12,21 @@ p{
 
 }
 
+.cc{
+    position: absolute;
+    top: 55%;
+    visibility:hidden;
+    animation: show 5s forward;
+}
+
+#cc-one{
+    left:-5%;
+}
+
+#cc-two{
+    left: 25%;
+    top:52%;
+}
 
 .caption_section{
     position:absolute;
