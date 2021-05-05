@@ -74,6 +74,43 @@ p{
     animation-delay: 29s;
 }
 
+
+#cap-ten{
+    visibility:hidden;
+    animation: show-hide 8s forwards;
+    animation-delay: 38s;
+}
+
+#cap-eleven{
+    visibility:hidden;
+    animation: show-hide 8s forwards;
+    animation-delay: 38s;
+}
+
+#cap-twelve{
+    visibility:hidden;
+    animation: show-hide 5s forwards;
+    animation-delay: 41s;
+}
+
+#cap-thirteen{
+    visibility:hidden;
+    animation: show-hide 8s forwards;
+    animation-delay: 46s;
+}
+
+#cap-fourteen{
+    visibility:hidden;
+    animation: show-hide 8s forwards;
+    animation-delay: 46s;
+}
+
+#cap-fifteen{
+    visibility:hidden;
+    animation: show-hide 8s forwards;
+    animation-delay: 46s;
+}
+
 @keyframes show-hide{
     50% {
         visibility: visible;
