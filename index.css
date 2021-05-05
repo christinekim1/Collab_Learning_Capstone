@@ -13,7 +13,7 @@ body{
 }
 
 .wrapper {
-    width: auto;
+    width: 100%;
     position: relative;
 }
 
@@ -26,7 +26,11 @@ body{
     width: 40%;
     /* border-style:solid; */
     position:relative;
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
 }
+
 
 .bar{
     width: 20%;
