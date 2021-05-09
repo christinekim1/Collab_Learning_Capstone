@@ -28,6 +28,35 @@ p{
     top:52%;
 }
 
+#cc-interrupt{
+    left: 10%;
+    top: 58%;
+}
+
+
+#cc-interrupt2{
+    left: 45%;
+    top: 58%;
+}
+
+#g-cc-one{
+    left: 5%;
+}
+
+#g-cc-two{
+    left: 12%;
+    top: 52%;
+}
+
+#g-cc-three{
+    left: 19%;
+    top: 52%;
+}
+
+#g-cc-four{
+    left: 28%;
+}
+
 .caption_section{
     position:absolute;
     width: 80%;

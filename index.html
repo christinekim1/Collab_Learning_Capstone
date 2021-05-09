@@ -17,6 +17,13 @@
         <a href = "post-class.html">
             <img class = "full-width-img" src = "assets/nav.png"/>
         </a>
+        <div class = "modal" id = "modal-one">
+            <div class = "pop-up-box">
+                <img class = "pop-up" id = "pop-one" src = "assets/DM-1.png" onClick = "changeImage('pop-one')">
+                <img class = "close" src = "assets/Close.png" onClick = "hide('modal-one')">
+                <img class ="send" src = "assets/send.png" onClick = "hide('modal-one')">
+            </div>
+        </div>
         <div class = "row1">
             <div class = "graph">
                 <!-- code for the bars -->
@@ -24,14 +31,14 @@
                 <div class = "keyword" id = "green" onMouseOver="show('cc-one')" onMouseOut="hide('cc-one')"></div>
                 <img class = "half-width-img" src = "assets/graph_frame.png" />
                 <div class = "bar" id = "two"></div>
-                <img id = "interrupt" src = "assets/interruption.png"/>
+                <img id = "interrupt" src = "assets/interruption.png" onMouseOver ="show('cc-interrupt')" onMouseOut="hide('cc-interrupt')"/>
                 <div class = "bar" id = "three"></div>
                 <div class = "bar" id = "four"></div>
                 <div class = "keyword" id = "blue" onMouseOver="show('cc-two')" onMouseOut="hide('cc-two')"></div>
                 <div class = "bar" id = "five"></div>
                 <div class = "bar" id = "six"></div>
                 <div class = "bar" id = "seven"></div>
-                <img id = "interrupt" src = "assets/interruption.png" style = "left: 71%; animation-delay: 46s;"/>
+                <img id = "interrupt" src = "assets/interruption.png" style = "left: 71%; animation-delay: 46s;" onMouseOver ="show('cc-interrupt2')" onMouseOut="hide('cc-interrupt2')"/>
 
                 <div class = "cc" id = "cc-one">
                     <img src = "assets/cc/CC.png" style = "width: 50%;">
@@ -39,6 +46,14 @@
 
                 <div class = "cc" id = "cc-two">
                     <img src = "assets/cc/CC2.png" style = "width: 50%;">
+                </div>
+
+                <div class = "cc" id = "cc-interrupt">
+                    <img src = "assets/cc/interruptCC.png" style = "width: 50%;">
+                </div>
+
+                <div class = "cc" id = "cc-interrupt2">
+                    <img src = "assets/cc/interruptCC.png" style = "width: 50%;">
                 </div>
 
                 <!-- code for the live captions -->
@@ -65,7 +80,7 @@
                     <img id = "cap-twelve" src = "assets/Caption Section.png" style = "width: 100%;"/>
                 </div>
 
-                <div class = "caption_section">
+                <div class = "caption_section" onClick = "show('modal-one')">
                     <img id = "cap-thirteen" src = "assets/Caption Section-4.png" style = "width: 100%;"/>
                     <img id = "cap-fourteen" src = "assets/Caption Section.png" style = "width: 100%;"/>
                     <img id = "cap-fifteen" src = "assets/Caption Section-5.png" style = "width: 100%;"/>
@@ -74,51 +89,66 @@
             </div>
             <div class = "graph" id = "second">
                 <!-- code for the bars -->
+                <div id = "raised_hand_text">
+                    <p>Ryan R raised a hand</p>
+                </div>
                 <div class = "bar" id = "oneb"></div>
                 <div class = "bar" id = "twob"></div>
-                <div class = "keyword" style = "background:rgba(47, 128, 237, 0.45); left: 28%; animation-delay: 16s;"></div>
+                <div class = "keyword" style = "background:rgba(47, 128, 237, 0.45); left: 28%; animation-delay: 16s;" onMouseOver="show('g-cc-one')" onMouseOut="hide('g-cc-one')"></div>
                 <div class = "bar" id = "threeb"></div>
-                <div class = "keyword" style = "background: rgba(140, 190, 33, 0.5); left: 35%; animation-delay: 21s;"></div>
-                <div class = "keyword" style = "background: rgba(140, 190, 33, 0.5); left: 38%; animation-delay: 24s;"></div>
+                <div class = "keyword" style = "background: rgba(140, 190, 33, 0.5); left: 35%; animation-delay: 21s;" onMouseOver="show('g-cc-two')" onMouseOut="hide('g-cc-two')"></div>
+                <div class = "keyword" style = "background: rgba(140, 190, 33, 0.5); left: 38%; animation-delay: 24s;"onMouseOver="show('g-cc-two')" onMouseOut="hide('g-cc-two')"></div>
                 <img class = "half-width-img" id = "disappear" src = "assets/graph_frame_2_noline.png" />
                 <img class = "half-width-img" id = "raise_hand" src = "assets/graph_frame_2.png"  />
                 <div class = "bar" id = "fourb"></div>
-                <div class = "keyword" style = "background:rgba(47, 128, 237, 0.45); left: 43%; animation-delay: 27s;"></div>
-                <div class = "keyword" style = "background:rgba(47, 128, 237, 0.45); left: 46%; animation-delay: 28s;"></div>
-                <img id = "interrupt" src = "assets/interruption.png" style = "left: 50%; animation-delay: 32s;"/>
+                <div class = "keyword" style = "background:rgba(47, 128, 237, 0.45); left: 43%; animation-delay: 27s;" onMouseOver="show('g-cc-three')" onMouseOut="hide('g-cc-three')"></div>
+                <div class = "keyword" style = "background:rgba(47, 128, 237, 0.45); left: 46%; animation-delay: 28s;" onMouseOver="show('g-cc-three')" onMouseOut="hide('g-cc-three')"></div>
                 <div class = "bar" id = "fiveb"></div>
-                <div class = "keyword" style = "background: rgba(169, 76, 242, 0.35); left: 52%; animation-delay: 33s;"></div>
-                <div class = "keyword" style = "background: rgba(169, 76, 242, 0.35); left: 55%; animation-delay: 35s;"></div>
+                <div class = "keyword" style = "background: rgba(169, 76, 242, 0.35); left: 52%; animation-delay: 33s;" onMouseOver="show('g-cc-four')" onMouseOut="hide('g-cc-four')"></div>
+                <div class = "keyword" style = "background: rgba(169, 76, 242, 0.35); left: 55%; animation-delay: 35s;" onMouseOver="show('g-cc-four')" onMouseOut="hide('g-cc-four')"></div>
                 <div class = "bar" id = "sixb"></div>
 
+                <div class = "cc" id = "g-cc-one">
+                    <img src = "assets/Group 2/CC-1.png" style = "width: 50%;">
+                </div>
+
+                <div class = "cc" id = "g-cc-two">
+                    <img src = "assets/Group 2/CC-2.png" style = "width: 50%;">
+                </div>
+                <div class = "cc" id = "g-cc-three">
+                    <img src = "assets/Group 2/CC-3.png" style = "width: 50%;">
+                </div>
+                <div class = "cc" id = "g-cc-four">
+                    <img src = "assets/Group 2/CC-4.png" style = "width: 50%;">
+                </div>
 
                 <!-- code for the live captions -->
                 <div class = "caption_section">
-                    <img id = "cap-one" src = "assets/Group 2/Caption Section-1.png" style = "width: 100%;"/>
-                    <img id = "cap-two" src = "assets/Group 2/Caption Section-2.png" style = "width: 100%;"/>
-                    <img id = "cap-three" src = "assets/Group 2/Caption Section-3.png" style = "width: 100%;"/>
+                    <img id = "cap-one" src = "assets/Group 2/Caption Section-1.png" style = "width: 100%; animation: show-hide 25s forwards;" />
+                    <img id = "cap-two" src = "assets/Group 2/Caption Section-2.png" style = "width: 100%; animation: show-hide 15s forwards; animation-delay: 10s"/>
+                    <img id = "cap-three" src = "assets/Group 2/Caption Section-3.png" style = "width: 100%; animation: show-hide 5s forwards; animation-delay: 20s"/>
                 </div>
                 <div class = "caption_section">
-                    <img id = "cap-four" src = "assets/Group 2/Caption Section-2.png" style = "width: 100%;"/>
-                    <img id = "cap-five" src = "assets/Group 2/Caption Section-3.png" style = "width: 100%;"/>
-                    <img id = "cap-six" src = "assets/Group 2/Caption Section-4.png" style = "width: 100%;"/>
-                </div>
-
-                <div class = "caption_section">
-                    <img id = "cap-seven" src = "assets/Group 2/Caption Section-3.png" style = "width: 100%;"/>
-                    <img id = "cap-eight" src = "assets/Group 2/Caption Section-4.png" style = "width: 100%;"/>
-                    <img id = "cap-nine" src = "assets/Group 2/Caption Section-5.png" style = "width: 100%;"/>
+                    <img id = "cap-four" src = "assets/Group 2/Caption Section-2.png" style = "width: 100%; animation: show-hide 8s forwards; animation-delay: 25s"/>
+                    <img id = "cap-five" src = "assets/Group 2/Caption Section-3.png" style = "width: 100%; animation: show-hide 8s forwards; animation-delay: 25s"/>
+                    <img id = "cap-six" src = "assets/Group 2/Caption Section-4.png" style = "width: 100%; animation: show-hide 7s forwards; animation-delay: 26s"/>
                 </div>
 
                 <div class = "caption_section">
-                    <img id = "cap-ten" src = "assets/Group 2/Caption Section-4.png" style = "width: 100%;"/>
-                    <img id = "cap-eleven" src = "assets/Group 2/Caption Section-5.png" style = "width: 100%;"/>
+                    <img id = "cap-seven" src = "assets/Group 2/Caption Section-3.png" style = "width: 100%; animation: show-hide 8s forwards; animation-delay: 33s"/>
+                    <img id = "cap-eight" src = "assets/Group 2/Caption Section-4.png" style = "width: 100%; animation: show-hide 8s forwards; animation-delay: 33s"/>
+                    <img id = "cap-nine" src = "assets/Group 2/Caption Section-5.png" style = "width: 100%; animation: show-hide 7s forwards; animation-delay: 34s"/>
                 </div>
 
                 <div class = "caption_section">
-                    <img id = "cap-thirteen" src = "assets/Group 2/Caption Section-4.png" style = "width: 100%;"/>
-                    <img id = "cap-fourteen" src = "assets/Group 2/Caption Section-5.png" style = "width: 100%;"/>
-                    <img id = "cap-fifteen" src = "assets/Group 2/Caption Section-6.png" style = "width: 100%;"/>
+                    <img id = "cap-ten" src = "assets/Group 2/Caption Section-4.png" style = "width: 100%; animation: show-hide 3s forwards; animation-delay: 41s"/>
+                    <img id = "cap-eleven" src = "assets/Group 2/Caption Section-5.png" style = "width: 100%; animation: show-hide 3s forwards; animation-delay: 41s"/>
+                </div>
+
+                <div class = "caption_section" onClick = "show('modal-one')">
+                    <img id = "cap-thirteen" src = "assets/Group 2/Caption Section-4.png" style = "width: 100%; animation: show 5s forwards; animation-delay: 44s"/>
+                    <img id = "cap-fourteen" src = "assets/Group 2/Caption Section-5.png" style = "width: 100%; animation: show 5s forwards; animation-delay: 44s"/>
+                    <img id = "cap-fifteen" src = "assets/Group 2/Caption Section-6.png" style = "width: 100%; animation: show 5s forwards; animation-delay: 44s"/>
                 </div>
                 
             </div>
