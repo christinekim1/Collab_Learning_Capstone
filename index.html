@@ -14,12 +14,29 @@
 
 <body>
     <div class = "wrapper">
-        <a href = "post-class.html">
-            <img class = "full-width-img" src = "assets/nav.png"/>
-        </a>
+        <div class = "row1">
+            <a href = "post-class.html">
+                <img class = "full-width-img" src = "assets/nav.png"/>
+            </a>
+            <img class = "group_message" src = "assets/buttons/group-announcement.png">
+            <img class = "notifications" src = "assets/buttons/bell.png">
+            <img class = "notifications" id = "alert" src = "assets/buttons/bell-alert.png" onClick = "showDisplay('sidebar-first')">
+        </div>
+        <div class = "sidebar" id = "sidebar-first">
+            <img id = "sidebar-image" src = "assets/Notifications/first.png" onClick = "showDisplay('sidebar-second')">
+        </div>
+        <div class = "sidebar" id = "sidebar-second">
+            <img id = "sidebar-image" src = "assets/Notifications/2.png" onClick = "showDisplay('sidebar-third')">
+        </div>
+        <div class = "sidebar" id = "sidebar-third">
+            <img id = "sidebar-image" src = "assets/Notifications/3.png" onClick = "showDisplay('sidebar-fourth')">
+        </div>
+        <div class = "sidebar" id = "sidebar-fourth">
+            <img id = "sidebar-image" src = "assets/Notifications/4.png" onClick = "hideDisplay('sidebar-fourth'); hideDisplay('sidebar-third'); hideDisplay('sidebar-second'); hideDisplay('sidebar-first'); hide('alert')">
+        </div>
         <div class = "modal" id = "modal-one">
             <div class = "pop-up-box">
-                <img class = "pop-up" id = "pop-one" src = "assets/DM-1.png" onClick = "changeImage('pop-one')">
+                <img class = "pop-up" id = "pop-one" src = "assets/DM-1.png" onClick = "changeImageToDM('pop-one')">
                 <img class = "close" src = "assets/Close.png" onClick = "hide('modal-one')">
                 <img class ="send" src = "assets/send.png" onClick = "hide('modal-one')">
             </div>
@@ -90,7 +107,7 @@
             <div class = "graph" id = "second">
                 <!-- code for the bars -->
                 <div id = "raised_hand_text">
-                    <p>Ryan R raised a hand</p>
+                    <p style = "font-size: small;">Ryan R raised a hand</p>
                 </div>
                 <div class = "bar" id = "oneb"></div>
                 <div class = "bar" id = "twob"></div>
